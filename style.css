@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --bg-image: url(./images/undraw_happy_birthday.svg);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.center {
+  text-align: center;
+}
+
+.bgcolor {
+  background-color: #6dfafb;
+}
+
+.transparent {
+  opacity: 0.8;
+}
+
+.blockDesign {
+  width: 37%;
+  margin: auto;
+  padding: 1rem 0.5rem;
+}
+
+#block1 {
+  margin-top: 18%;
+}
+
+#block1 h1 {
+  font-size: 320%;
+  margin-bottom: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+#block1 a {
+  font-size: 180%;
+  color: black;
+}
+
+#block2 {
+  margin-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+#block2 h3 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+#block2 h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.35rem;
+  margin-top: 0.7rem;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.85rem 0.5rem;
+}
+
+button {
+  font-size: 1rem;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1.1rem;
+  border-radius: 1.2rem;
+  border: none;
+}
+
+#output h4 {
+  margin-top: 2.5rem;
+}
+
+#output img {
+  width: 60%;
+  height: 60%;
+}
+
+#privacypolicy {
+  margin-top: 3rem;
+  border: 1px solid black;
+}
+
+#notice {
+  width: 75%;
+  margin: auto;
+  color: red;
+  border: 1px solid red;
+}
+
+span {
+  cursor: pointer;
+}
+
