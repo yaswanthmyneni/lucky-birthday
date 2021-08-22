@@ -1,4 +1,4 @@
-# Lucky Number
+# Lucky Birthday
 The application checks whether your birthday is lucky or not.
 
 ## Build with:
