@@ -3,11 +3,11 @@ var luckynumber = document.getElementById("luckynumber");
 var check = document.getElementById("check");
 var output = document.getElementById("output");
 
-var cancel = document.getElementsByTagName('span');
-var notice = document.getElementById('notice');
+var cancel = document.getElementsByTagName("span");
+var notice = document.getElementById("notice");
 
-cancel[0].addEventListener('click', () => {
-    notice.style.display = 'none';
+cancel[0].addEventListener("click", () => {
+  notice.style.display = "none";
 });
 
 check.addEventListener("click", () => {
@@ -23,15 +23,19 @@ check.addEventListener("click", () => {
 
   remainder = sum % luckyNumber;
 
-  if (remainder === 0) {
-    output.innerHTML =
-      "<h4> You are lucky </h4>" +
-      "<img src='./images/undraw_happy_feeling.svg'>";
+  if (!sum) {
+    output.innerHTML = "<h4> Please select the birth date! </h4>";
+  } else if (!luckyNumber) {
+    output.innerHTML = "<h4> Please enter the lucky number </h4>";
   } else {
-    output.innerHTML =
-      "<h4> You are not lucky </h4>" +
-      "<img src='./images/undraw_feeling_blue.svg'>";
+    if (remainder === 0) {
+      output.innerHTML =
+        "<h4> You are lucky </h4>" +
+        "<img src='./images/undraw_happy_feeling.svg'>";
+    } else {
+      output.innerHTML =
+        "<h4> You are not lucky </h4>" +
+        "<img src='./images/undraw_feeling_blue.svg'>";
+    }
   }
 });
-
-
